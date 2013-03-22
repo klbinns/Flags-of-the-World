@@ -17,5 +17,7 @@
     <string name="asked_text">Asked:</string>
     <string name="correctVal">0</string>
     <string name="askedVal">0</string>
-   
+    <string name="title_activity_end_game">End Game</string>
+    <string name="main_menu">Main Menu</string>
+
 </resources>

@@ -8,6 +8,7 @@ import java.util.Random;
 import java.util.Set;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -75,7 +76,10 @@ public class EasyGameActivity extends Activity implements OnCheckedChangeListene
 		return true;
 	}
 	
-	
+	/**
+	 * Processes the action when the submit button is pressed
+	 * @param theButton
+	 */
 	public void submit(View theButton){
 		
 		// check answer
@@ -115,8 +119,13 @@ public class EasyGameActivity extends Activity implements OnCheckedChangeListene
 			// set up next question
 			setupNextQuestion();
 		
-		} else {
-			// exit game
+		} else { // exit game
+			
+			Intent intent = new Intent(this, EndGameActivity.class);
+			intent.putExtra("questionsAsked", questionsAsked);
+			intent.putExtra("questionsCorrect", questionsCorrect);
+			startActivity(intent);
+		
 		}
 		
 	}

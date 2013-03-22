@@ -26,6 +26,10 @@
             android:name="com.binns.flagsoftheworld.EasyGameActivity"
             android:label="@string/title_activity_easy_game" >
         </activity>
+        <activity
+            android:name="com.binns.flagsoftheworld.EndGameActivity"
+            android:label="@string/title_activity_end_game" >
+        </activity>
     </application>
 
 </manifest>
