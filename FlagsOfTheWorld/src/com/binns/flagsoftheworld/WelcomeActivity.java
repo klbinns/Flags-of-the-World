@@ -38,10 +38,8 @@ public class WelcomeActivity extends Activity {
 	
 	public void startDifficultGame(View theButton){
 		
-		Toast.makeText(
-				getApplicationContext(),
-				"The difficult game hasn't been implemented yet.", 
-				Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(this, DifficultGameActivity.class);
+		startActivity(intent);
 		
 	}
 

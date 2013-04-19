@@ -25,7 +25,7 @@
         <item>@drawable/united_kingdom</item>
         <item>@drawable/usa</item>
     </array>
-    <array name="countries">
+    <string-array name="countries">
         <item>Australia</item>
         <item>Bermuda</item>
         <item>Brazil</item>
@@ -49,6 +49,6 @@
         <item>Turkey</item>
         <item>United Kingdom</item>
         <item>United States of America</item>
-    </array>
+    </string-array>
     
 </resources>

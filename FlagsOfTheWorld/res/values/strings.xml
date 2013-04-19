@@ -19,5 +19,7 @@
     <string name="askedVal">0</string>
     <string name="title_activity_end_game">End Game</string>
     <string name="main_menu">Main Menu</string>
+    <string name="title_activity_difficult_game">Difficult Game</string>
+    <string name="enter_answer_here">Enter Answer Here:</string>
 
 </resources>

@@ -27,6 +27,10 @@
             android:label="@string/title_activity_easy_game" >
         </activity>
         <activity
+            android:name="com.binns.flagsoftheworld.DifficultGameActivity"
+            android:label="@string/title_activity_difficult_game" >
+        </activity>
+        <activity
             android:name="com.binns.flagsoftheworld.EndGameActivity"
             android:label="@string/title_activity_end_game" >
         </activity>

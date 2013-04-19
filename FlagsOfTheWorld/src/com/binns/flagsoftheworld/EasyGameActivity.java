@@ -108,7 +108,7 @@ public class EasyGameActivity extends Activity implements OnCheckedChangeListene
 				toastText, 
 				Toast.LENGTH_SHORT).show();
 		
-		// TODO exit game after so many questions		
+		// exit game after so many questions		
 		if(questionsAsked < 10){
 				
 			// uncheck radio buttons and set button to disabled
@@ -120,6 +120,9 @@ public class EasyGameActivity extends Activity implements OnCheckedChangeListene
 			setupNextQuestion();
 		
 		} else { // exit game
+			
+			// FIXME drop current Activity from stack so user doesn't go
+			// 'back' into the finished game
 			
 			Intent intent = new Intent(this, EndGameActivity.class);
 			intent.putExtra("questionsAsked", questionsAsked);
@@ -135,7 +138,8 @@ public class EasyGameActivity extends Activity implements OnCheckedChangeListene
 		List<Country> countries = new LinkedList<Country>();
 		
 		Country country;
-				
+		
+		// FIXME this doesn't quite work. will repeat questions
 		do {
 			// get a country for question
 			correctCountry = getRandomCountry();
